@@ -1,3 +1,5 @@
+[First go to tuya_sensor integration](https://github.com/silvanfischer/tuya_sensors)
+
 # EVSE Phase A Decoder for Home Assistant (Pyscript)
 
 This project decodes the raw Base64 value of an EVSE (charging cable) sensor 
