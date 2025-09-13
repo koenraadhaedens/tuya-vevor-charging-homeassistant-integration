@@ -70,6 +70,7 @@ in Home Assistant, using [Pyscript](https://hacs-pyscript.readthedocs.io).
   - Add action → **Call service**
   - Select `pyscript.evse_force_decode`
 
+I use HA automation now to call this service every 10 seconds
 ---
 
 ## 🛠 Debugging
@@ -87,24 +88,8 @@ in Home Assistant, using [Pyscript](https://hacs-pyscript.readthedocs.io).
 
 ---
 
-## 🔄 Adjustments
-
-- Change update interval:
-  ```python
-  @time_trigger("period(30s)")
-  ```
-  → change `30s` to `10s`, `1min`, etc.
-
-- You can rename the output sensors by editing:
-  ```python
-  _pub("sensor.evse_voltage", ...)
-  _pub("sensor.evse_current", ...)
-  _pub("sensor.evse_power", ...)
-  ```
-
----
-
 ## Example Result
+image will folow soon
 
 When idle:
 ```
